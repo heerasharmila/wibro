@@ -1,0 +1,8 @@
+ function stopVideo() {
+    var iframe = document.getElementById("videoFrame");
+    iframe.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+  }
+
+  // Pause video when modal is closed
+  var videoModal = document.getElementById('videoModal');
+  videoModal.addEventListener('hidden.bs.modal', stopVideo);

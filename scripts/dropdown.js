@@ -1,0 +1,52 @@
+$(document).ready(function () {
+   $('.dodp').hover(function () {
+      $('.whatdo').addClass('show');
+	  $('.abtwibro').removeClass('show');
+	  $('.engdb').removeClass('show');
+
+   }, function () {
+      $('.dropdown-menu').mouseleave(function () {
+         $('.whatdo').removeClass('show');
+      });
+   });
+   $('.abtwibro').hover(function () {
+      $('.aboutwibro').addClass('show');
+	  $('.whatdo').removeClass('show');
+	  $('.engdb').removeClass('show');
+	  
+   }, function () {
+      $('.dropdown-menu').mouseleave(function () {
+         $('.aboutwibro').removeClass('show');
+      });
+   });
+   $('.hover-item').hover(function () {
+     $(this).find('.custom-arrow').html('&#9650;'); 
+   }, function () {
+     $(this).find('.custom-arrow').html('&#9660;');
+   });
+
+   $('.hover-item1').hover(function () {
+      const target = $(this).data('target');
+      $('.sub-list').removeClass('show');
+      $('#' + target).addClass('show');
+	  $('#dropdownGrid').css('grid-template-columns', '1fr 1fr 1fr');
+	  
+   }, function () {});
+   $('.dropdown-menu').mouseleave(function () {
+      $('.sub-list').removeClass('show');
+	  $('#dropdownGrid').css('grid-template-columns', '1fr 1fr');
+   });
+   $('.endp').hover(function () {
+ $('.engdb').addClass('show');
+      $('.aboutwibro').removeClass('show');
+	  $('.whatdo').removeClass('show');
+	  
+   }, function () {
+      $('.dropdown-menu').mouseleave(function () {
+         $('.aboutwibro').removeClass('show');
+      });
+	  $('.dropdown-menu').mouseleave(function () {
+         $('.whatdo').removeClass('show');
+      });
+   });
+});

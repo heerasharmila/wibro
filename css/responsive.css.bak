@@ -1,0 +1,88 @@
+/* Mobile styles (below 576px) */
+@media (max-width: 575.98px) {
+	.dropdown-grid {
+		grid-template-columns: 1fr;
+		border-left: none;
+	}
+
+	.dropdown-grid>div {
+		border-left: none;
+		padding-left: 0;
+	}
+	.overlay-content {
+      top: 10% !important;
+	  left: 5% !important;
+    }
+	.overlay-content h1 {
+      font-size: 2rem !important;
+    }
+	.casestudy{
+		color:#fff;
+		font-size:2rem !important;
+		padding-left:0px !important;
+	}
+	.terminal{
+		font-size:1rem !important;
+		color:#fff;
+		margin-top:10px !important;
+		padding-left:0px !important;
+		
+	}
+	.casestudycontainer{
+		width:100% !important;
+	}
+	.play-button {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      font-size: 1rem;
+      color: white;
+      transform: translate(-50%, -50%);
+      background: #297f94;
+      border-radius: 50%;
+      padding: 15px 20px;
+    }
+	.play-button1 {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      font-size: 1rem;
+      color: white;
+      transform: translate(-50%, -50%);
+      border: 2px solid #fff;
+      border-radius: 50%;
+      padding: 15px 20px;
+    }
+	.para1container{
+		background-color:#341d55;
+		height:392px;
+		width:100% !important;
+	}
+}
+
+/* Tablet styles (576px and above) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.custom-box {
+		background-color: #d1ecf1;
+		font-size: 16px;
+	}
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.overlay-content {
+      top: 10% !important;
+	  left: 15% !important;
+    }
+	.overlay-content h1 {
+      font-size: 2rem !important;
+    }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+	.custom-box {
+		background-color: #fff3cd;
+		font-size: 20px;
+	}
+}
